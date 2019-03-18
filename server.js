@@ -4,10 +4,10 @@ var app = express();
 // set port cho ứng dụng
 var port = process.env.PORT || 8080;
 
-// tạo route cho api
-app.get('/api', function(req, res) {
+// tạo route cho trang index
+app.get('/', function(req, res) {
 
-    // trả về file index.html
+    // trả về một lời chào đơn giản
     res.send('XIN CHÀO BẠN');
 });
 
